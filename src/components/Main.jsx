@@ -21,34 +21,34 @@ const Main = () => {
 
   ]
   return (
-    <div className='mx-auto container mt-8 px-5'>
-      <div className='flex flex-col md:flex-row gap-x-5 '>
+    <div className='mx-auto max-w-[1150px] mt-[55px] px-5'>
+      <div className='flex flex-col xl:flex-row gap-x-8 '>
         {/* left */}
         <div className='flex flex-col'>
-          <img className='object-cover hidden md:flex ' src={Portada} alt="portada " />
-          <img className='object-cover flex md:hidden ' src={PortadaMovil} alt="portada " />
-          <div className='grid grid-cols-1 md:grid-cols-2 mt-8'>
-            <h1 className=' font-black w-[11ch] md:w-[8ch] text-3xl md:text-5xl text-very-dark-blue'>The Bright Future of Web 3.0?</h1>
-            <div>
-              <p className=' text-sm md:text-base mt-4 md:mt-0'>
+          <img className='object-cover hidden md:flex' src={Portada} alt="portada" />
+          <img className='object-cover flex md:hidden' src={PortadaMovil} alt="portada" />
+          <div className='grid gap-x-7 grid-cols-1 md:grid-cols-2 mt-8'>
+            <h1 className='font-black w-[11ch] md:w-[8ch] text-[3rem] md:text-[3.5rem] leading-[3.6rem] text-very-dark-blue'>The Bright Future of Web 3.0?</h1>
+            <div className='mb-10 xl:mb-0'>
+              <p className='text-sm md:text-base mt-4 md:mt-0'>
                 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <button className=' mt-5 bg-red hover:bg-very-dark-blue text-sm tracking-widest px-6 p-3 text-white'>READ MORE</button>
+              <button className=' mt-8 font-semibold bg-red hover:bg-very-dark-blue text-sm tracking-[0.2rem] px-10 p-4 text-white'>READ MORE</button>
             </div>
           </div>
         </div>
 
 
         {/* right */}
-        <div className=' bg-very-dark-blue text-white w-full  md:w-[900px] p-6 mt-12 md:mt-0'>
-          <h2 className='text-orange text-3xl font-bold'>New</h2>
+        <div className=' bg-very-dark-blue text-white w-full xl:w-[1040px] pb-9 p-6 mt-12 md:mt-0'>
+          <h2 className='text-orange text-[2.5em] font-bold mt-2 leading-none'>New</h2>
           <div className='flex flex-col divide-y divide-dark-grayish-blue'>
             {news.map((item, index) => {
               return (
-                <div className=' py-6 last:pb-0 flex flex-col gap-y-2'>
-                  <span className=' font-bold'>{item.title}</span>
-                  <p className='text-sm text-grayish-blue'>{item.subtitle}</p>
+                <div className='py-[30.6px]  last:pb-0 flex flex-col gap-y-[0.4rem]'>
+                  <span className='cursor-pointer hover:text-orange font-bold text-[1.27em]'>{item.title}</span>
+                  <p className='text-[0.96rem] text-grayish-blue'>{item.subtitle}</p>
                 </div>
               )
             })}

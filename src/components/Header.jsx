@@ -13,14 +13,12 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const nav = ['Home', 'New', 'Popular', 'Treding', 'Categories']
   return (
-    <div className='container mx-auto flex justify-between mt-6 px-5'>
+    <div className='max-w-[1150px] mx-auto flex justify-between mt-[90px] px-5'>
       {/* logo */}
-      <span>
-        <img src={Logo} alt="logo" />
-      </span>
+      <img src={Logo} alt="logo" />
 
       {/* nav */}
-      <ul className=' hidden md:flex items-center gap-x-7'>
+      <ul className='hidden md:flex items-center gap-x-[41px]'>
         {nav.map((item, index) => (
           <li className=' hover:text-red cursor-pointer'>{item}</li>
         ))}

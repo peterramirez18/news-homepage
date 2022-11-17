@@ -26,15 +26,15 @@ const Posts = () => {
 
     ]
     return (
-        <div className='mx-auto container mt-10 px-5'>
-            <div className=' flex flex-col gap-6 md:flex-row '>
+        <div className='mx-auto max-w-[1150px] mt-[69px] px-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 '>
                 {posts.map((item, index) => {
                     return (
-                        <div className='flex gap-x-4'>
-                            <img className=' h-[120px]' src={item.image} alt="" />
+                        <div className='flex gap-x-6'>
+                            <img className=' h-[127px]' src={item.image} alt="" />
                             <div className='flex flex-col gap-y-2'>
                                 <span className=' font-semibold text-3xl text-grayish-blue'>0{index + 1}</span>
-                                <span className=' font-bold hover:text-red cursor-pointer '>{item.title}</span>
+                                <span className=' font-extrabold hover:text-red cursor-pointer text-lg '>{item.title}</span>
                                 <span className=' text-sm w-full text-dark-grayish-blue  '>{item.subtitle}</span>
                             </div>
                         </div>
