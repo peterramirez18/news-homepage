@@ -17,7 +17,7 @@ const ToggleDark = () => {
         const nextTheme = dark ? 'dark' : 'light'
         html.classList.add(nextTheme)
 
-        localStorage.setItem("theme", nextTheme)
+        localStorage.setItem("dark", nextTheme)
     }, [dark]);
 
 
